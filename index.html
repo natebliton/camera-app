@@ -1,40 +1,35 @@
-<!DOCTYPE html>
+<html lang=”en”>
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="x-ua-compatible" content="ie=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-<html lang="en">
+		<!-- Name of the app -->
+		<title>Camera App</title>
 
-<head>
-    <meta charset="utf-8">
-    <meta http-equiv="x-ua-compatible" content="ie=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+		<!-- Link to main style sheet -->
+		<link rel="stylesheet" href="style.css"> 
+	</head>
+	<body>
 
-    <!-- name of your awesome camera app-->
-    <title>Camera App</title>
+		<!-- Camera -->
+		<main id="camera">
 
-    <!-- link to your main style sheet-->
-    <link rel="stylesheet" href="style.css">
-</head>
+		    <!-- Camera sensor -->
+		    <canvas id="camera--sensor"></canvas>
+		    
+		    <!-- Camera view -->
+		    <video id="camera--view" autoplay playsinline></video>
+		    
+		    <!-- Camera output -->
+		    <img src="//:0" alt="" id="camera--output">
 
-<body>
+		    <!-- Camera trigger -->
+		    <button id="camera--trigger">Take a picture</button>
 
-    <!-- Camera -->
-    <main id="camera">
+		</main>
 
-        <!-- camera view-->
-        <video id="camera-view" autoplay playsinline></video>
-
-        <!-- Camera sensor-->
-        <canvas id="camera--sensor"></canvas>
-
-        <!-- Camera output-->
-        <img src="//:0" alt="" id="camera--output">
-
-        <!-- camera trigger-->
-        <button id="camera--trigger">Take a picture</button>
-
-    </main>
-    <!-- Reference to you JavaScript file-->
-    <script src="app.js"></script>
-
-</body>
-
+		<!-- Reference to your JavaScript file -->
+		<script src="app.js"></script> 
+	</body>
 </html>
